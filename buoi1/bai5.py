@@ -6,5 +6,5 @@ while x!=0:
     x//=10
     if(x<10 and x > 0):
         tmp2 = x
-print("So " + str(tmp1) + " co "+ str(dem) + " chu so")
-print("Chu so dau tien la:", tmp2)
+print("Co "+ str(dem) + " chu so")
+print("Chu so dau tien la:" + str(tmp2))

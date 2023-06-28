@@ -6,4 +6,4 @@ while (b > 0):
         a,b = b, a % b
     else:
         a,b = a, b % a
-print("Uoc so chun lon nhat la:",a)
+print("Uoc so chung lon nhat la:",a)
