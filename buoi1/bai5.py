@@ -1,6 +1,5 @@
 x = int(input("Nhap so nguyen x = "))
 dem=0
-tmp1 = x
 while x!=0:
     dem+=1
     x//=10
