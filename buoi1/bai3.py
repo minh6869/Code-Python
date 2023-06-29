@@ -1,5 +1,4 @@
 n = int(input("Nhap so nguyen n = "))
-
 hexa = hex(n)
 octa = oct(n)
 bina = bin(n)
