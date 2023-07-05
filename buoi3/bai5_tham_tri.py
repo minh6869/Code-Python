@@ -9,14 +9,14 @@ def uoc_chung_max(a,b):
 def boi_chung_min(a,b):
     return a*b // uoc_chung_max(a,b)
 
+numbers = []
 def Nhap_va_tim(uocmax, boimin):
-    numbers = []
     while 1:
-        num = int(input("Nhap so: "))
+        num = int(input("Nhập số: "))
         if num <= 0:
+            print("Kết thúc nhập!")
             break
         numbers.append(num) # Neu so da nhap vao > 0 thi them so do vao cuoi mang numbers
-
         uocmax = numbers[0]
         boimin = numbers[0]
         for i in range(1, len(numbers)):
@@ -25,9 +25,13 @@ def Nhap_va_tim(uocmax, boimin):
     
     return uocmax, boimin
 
-uocmax, boimin = Nhap_va_tim(uocmax, boimin)  
-print("Uoc chung lon nhat cua day vua nhap la: " + str(uocmax))
-print("Boi chung nho nhat cua day vua nhap la: " + str(boimin))
+uocmax, boimin = Nhap_va_tim(uocmax, boimin)
+if uocmax != 0:
+    print("Dãy đã nhập là: ", numbers)
+    print("Ước chung lớn nhất của dãy đã nhập là: " + str(uocmax))
+    print("Bội chung nhỏ nhất của dãy đã nhập là: " + str(boimin))
+else:
+    print("Dãy đã nhập không hợp lệ!")
 
 
 #Đầu tiên khởi tạo 2 biến uocmax và boimin đều bằng 0 hoặc bất kì số nào cũng được.

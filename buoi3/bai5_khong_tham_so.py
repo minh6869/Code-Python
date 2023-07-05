@@ -11,6 +11,7 @@ def tim_uoc_boi_chung():
     while True:
         num = int(input("Nhập số: "))
         if num <= 0:
+            print("Kết thúc nhập!")
             break
         numbers.append(num)
     if len(numbers) != 0:
@@ -19,9 +20,10 @@ def tim_uoc_boi_chung():
         for i in range(1, len(numbers)):
             uscln = uoc_so_chung_lon_nhat(uscln, numbers[i])
             bscnn = boi_so_chung_nho_nhat(bscnn, numbers[i])
+        print("Dãy đã nhập là: " + str(numbers))
         print("Ước số chung lớn nhất:", uscln)
         print("Bội số chung nhỏ nhất:", bscnn)
     else:
-        print("Day nhap khong hop le")
+        print("Dãy đã nhập không hợp lệ")
 
 tim_uoc_boi_chung()
